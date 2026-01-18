@@ -31,6 +31,10 @@ import NotFound from './pages/NotFound'
 import TermsOfService from './pages/TermsOfService'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import LucresIAChat from './pages/LucresIAChat'
+import Agenda from './pages/Agenda'
+import Content from './pages/Content'
+import ContentCreator from './pages/ContentCreator'
+import ServerError from './pages/ServerError'
 
 // NOVOS FUNIS PÚBLICOS
 import HubInicial from './pages/HubInicial'
