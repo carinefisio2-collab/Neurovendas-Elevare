@@ -110,6 +110,9 @@ function AppRoutes() {
       <Route path="/dashboard/creditos" element={<ProtectedRoute><Gamification /></ProtectedRoute>} />
       <Route path="/dashboard/agenda" element={<ProtectedRoute><Calendario365Pro /></ProtectedRoute>} />
       <Route path="/dashboard/beta" element={<ProtectedRoute><Gamification /></ProtectedRoute>} />
+      <Route path="/dashboard/chat" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
+      <Route path="/dashboard/lucresia" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
+      <Route path="/dashboard/conversa" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
       
       {/* Redirects de rotas antigas */}
       <Route path="/dashboard/whatsapp-scripts" element={<Navigate to="/dashboard/whatsapp" replace />} />
