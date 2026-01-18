@@ -117,6 +117,11 @@ function AppRoutes() {
       <Route path="/dashboard/chat" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
       <Route path="/dashboard/lucresia" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
       <Route path="/dashboard/conversa" element={<ProtectedRoute><LucresIAChat /></ProtectedRoute>} />
+      <Route path="/dashboard/agenda-completa" element={<ProtectedRoute><Agenda /></ProtectedRoute>} />
+      <Route path="/dashboard/conteudo" element={<ProtectedRoute><Content /></ProtectedRoute>} />
+      <Route path="/dashboard/criador-conteudo" element={<ProtectedRoute><ContentCreator /></ProtectedRoute>} />
+      <Route path="/error" element={<ServerError />} />
+      <Route path="/server-error" element={<ServerError />} />
       
       {/* Redirects de rotas antigas */}
       <Route path="/dashboard/whatsapp-scripts" element={<Navigate to="/dashboard/whatsapp" replace />} />
