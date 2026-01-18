@@ -30,6 +30,7 @@ import AnalysisComplete from './pages/AnalysisComplete'
 import NotFound from './pages/NotFound'
 import TermsOfService from './pages/TermsOfService'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import LucresIAChat from './pages/LucresIAChat'
 
 // NOVOS FUNIS PÚBLICOS
 import HubInicial from './pages/HubInicial'
