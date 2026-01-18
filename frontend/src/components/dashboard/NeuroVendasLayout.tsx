@@ -79,6 +79,12 @@ export default function NeuroVendasLayout({ children }: NeuroVendasLayoutProps) 
       ]
     },
     {
+      title: "Assistente IA",
+      items: [
+        { label: "Chat LucresIA", icon: MessageSquare, href: "/dashboard/chat", badge: "IA" },
+      ]
+    },
+    {
       title: "Diagnóstico & Marca",
       items: [
         { label: "Meu Diagnóstico", icon: ClipboardCheck, href: "/dashboard/diagnostico-premium" },
