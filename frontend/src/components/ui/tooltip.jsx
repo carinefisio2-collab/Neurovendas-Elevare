@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
+import { HelpCircle } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 
@@ -23,4 +24,19 @@ const TooltipContent = React.forwardRef(({ className, sideOffset = 4, ...props }
 ))
 TooltipContent.displayName = TooltipPrimitive.Content.displayName
 
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }
+// LabelWithTooltip component - Label with help icon that shows tooltip
+const LabelWithTooltip = ({ label, tooltip, className }) => (
+  <div className={cn("flex items-center gap-1.5", className)}>
+    <span className="text-sm font-medium text-slate-700">{label}</span>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <HelpCircle className="w-3.5 h-3.5 text-slate-400 cursor-help" />
+      </TooltipTrigger>
+      <TooltipContent>
+        <p className="max-w-[200px]">{tooltip}</p>
+      </TooltipContent>
+    </Tooltip>
+  </div>
+)
+
+export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider, LabelWithTooltip }
