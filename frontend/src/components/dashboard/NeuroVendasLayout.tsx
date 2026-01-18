@@ -27,6 +27,7 @@ import {
   Moon,
   Target,
   BarChart3,
+  MessageSquare,
 } from "lucide-react";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
